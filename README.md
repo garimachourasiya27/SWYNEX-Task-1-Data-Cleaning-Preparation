@@ -194,7 +194,7 @@ central value for numeric data.
 <h3>Step 5 – Handle Total Spent</h3>
 
 <p>
-For missing <code>Total Spent</code> values, the value was calculated using:
+For missing or blank <code>Total Spent</code> values, the value was calculated using:
 </p>
 
 <p>
@@ -208,12 +208,12 @@ Existing valid <code>Total Spent</code> values were retained.
 <h3>Step 6 – Handle Missing Dates</h3>
 
 <p>
-Invalid or missing transaction dates were handled by first converting invalid values
+Invalid or missing transaction dates were handled by converting invalid values
 to <code>null</code>.
 </p>
 
 <p>
-Missing dates were then filled using the median transaction date:
+Missing or blank dates were then filled using the median transaction date:
 </p>
 
 <p>
@@ -268,7 +268,7 @@ Missing dates were then filled using the median transaction date:
 
 <tr>
 <td>Total Spent</td>
-<td>Calculated using Quantity × Price Per Unit</td>
+<td>Missing/blank values calculated using Quantity × Price Per Unit</td>
 <td>Decimal Number</td>
 </tr>
 
@@ -286,7 +286,7 @@ Missing dates were then filled using the median transaction date:
 
 <tr>
 <td>Transaction Date</td>
-<td>Invalid values → null → Median Date</td>
+<td>Invalid/blank values handled using Median Date</td>
 <td>Date</td>
 </tr>
 </tbody>
@@ -506,6 +506,7 @@ Missing dates were then filled using the median transaction date:
 </thead>
 
 <tbody>
+
 <tr>
 <td><code>README.md</code></td>
 <td>Project documentation</td>
@@ -513,7 +514,7 @@ Missing dates were then filled using the median transaction date:
 
 <tr>
 <td><code>dirty_cafe_sales.csv</code></td>
-<td>Original/raw dataset</td>
+<td>Original/raw Cafe Sales dataset</td>
 </tr>
 
 <tr>
@@ -525,6 +526,22 @@ Missing dates were then filled using the median transaction date:
 <td><code>cleaned_dataset_screenshot.png</code></td>
 <td>Screenshot of the final cleaned dataset</td>
 </tr>
+
+<tr>
+<td><code>Task-1_Data_Cleaning_Applied_Steps_1.png</code></td>
+<td>Power Query Applied Steps showing the data cleaning process</td>
+</tr>
+
+<tr>
+<td><code>Task-1_Data_Cleaning_Applied_Steps_2.png</code></td>
+<td>Power Query Applied Steps showing additional cleaning and transformation steps</td>
+</tr>
+
+<tr>
+<td><code>Task-1_Data_Cleaning_Applied_Steps_3.png</code></td>
+<td>Power Query Applied Steps showing final cleaning and validation steps</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -544,6 +561,30 @@ Final cleaned Cafe Sales dataset prepared using Microsoft Excel and Power Query.
 <strong>cleaned_dataset_screenshot.png</strong><br>
 Screenshot showing the final cleaned dataset after the cleaning process.
 </p>
+
+<h3>Power Query Applied Steps</h3>
+
+<p>
+The Applied Steps screenshots provide evidence of the data cleaning and transformation
+process performed using Microsoft Excel Power Query.
+</p>
+
+<ul>
+<li>
+<code>Task-1_Data_Cleaning_Applied_Steps_1.png</code>
+– Initial cleaning and transformation steps
+</li>
+
+<li>
+<code>Task-1_Data_Cleaning_Applied_Steps_2.png</code>
+– Missing value and data preparation steps
+</li>
+
+<li>
+<code>Task-1_Data_Cleaning_Applied_Steps_3.png</code>
+– Final cleaning and validation steps
+</li>
+</ul>
 
 <hr>
 
